@@ -85,10 +85,10 @@ world!
         hi = original
         there = "world"
         hi += there
-        self.assertEqual(__, original)
+        self.assertEqual("Hello, ", original)
 
     def test_most_strings_interpret_escape_characters(self):
         string = "\n"
         self.assertEqual('\n', string)
         self.assertEqual("""\n""", string)
-        self.assertEqual(__, len(string))
+        self.assertEqual(1, len(string))
